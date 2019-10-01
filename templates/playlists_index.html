@@ -7,6 +7,8 @@
 
 {% for playlist in playlists %}
     <h2>{{ playlist.title }}</h2>
-    <small>{{ playlist.description }}</small>
+    <small>{{ playlist.description }}</small><br>
+    <small>{{ playlist.videos }}</small><br>
+    <small>{{ playlist.rating }}/5</small><br>
 {% endfor %}
 {% endblock %}
