@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<a href='/playlists/{{playlist._id}}'>Cancel</a>
+
 <form method='POST' action='/playlists/{{playlist._id}}'>
     {% include 'partials/playlists_form.html' %}
 </form>
