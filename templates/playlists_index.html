@@ -6,9 +6,7 @@
 <a href='/playlists/new'>New Playlist</a>
 
 {% for playlist in playlists %}
-    <h2>{{ playlist.title }}</h2>
-    <small>{{ playlist.description }}</small><br>
-    <small>{{ playlist.videos }}</small><br>
-    <small>{{ playlist.rating }}/5</small><br>
+    <h2><a href='/playlists/{{ playlist._id }}'>{{ playlist.title }}</a></h2>
+    <small>{{ playlist.description }}</small>
 {% endfor %}
 {% endblock %}
